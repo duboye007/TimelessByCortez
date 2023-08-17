@@ -1,0 +1,557 @@
+/* #f0be6d */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+  height: 100%;
+  background-color: #f9fbe7;
+}
+.txt-color {
+  color: #c6a46d;
+}
+.txt-family {
+  font-family: "Merriweather", serif;
+}
+nav {
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  width: 100%;
+  padding: 10px 0px;
+  background: #fff;
+  box-shadow: 0px 10px 25px rgba(188, 152, 74, 0.25);
+}
+
+.nav-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  padding: 10px 30px;
+}
+.w-80 {
+  width: 90%;
+}
+.m-auto {
+  margin: 0px auto;
+}
+.mobile-logo {
+  width: 70px;
+}
+.mobile-logo-text {
+  width: 200px;
+}
+ul {
+  width: 50%;
+  display: flex;
+  list-style: none;
+  text-align: center;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.dropdown-menu {
+  align-items: start;
+}
+a {
+  display: flex;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #000;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "Merriweather", serif;
+  align-items: center;
+}
+main {
+  width: 100%;
+  height: 100%;
+}
+.img-box {
+  background-color: #000;
+  display: flex;
+  padding: 10px 0px;
+  justify-content: space-between;
+}
+.cards {
+  height: 100vh;
+  width: 33%;
+  overflow: hidden;
+  box-shadow: 5px 8px 5px rgba(188, 152, 74, 0.35);
+}
+.one {
+  background-image: url(/assets/images/transition-1.JPG);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.two {
+  background-image: url(/assets/images/transition-2.JPG);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.three {
+  background-image: url(/assets/images/transition-3.JPG);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+/* .cards img {
+  height: 500px;
+  width: 350px;
+} */
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  width: 33%;
+  height: 100%;
+  color: #fff;
+  padding: 5px;
+  position: absolute;
+  background-color: rgba(27, 27, 27, 0.75);
+  overflow: hidden;
+  opacity: 0;
+}
+.info h1 {
+  font-size: 2.5rem;
+  letter-spacing: 3px;
+  margin-bottom: 0px;
+  font-family: "Merriweather", serif;
+  font-style: normal;
+  font-weight: 400;
+  color: #c6a46d;
+}
+h6 {
+  font-weight: 300;
+  font-size: 1rem;
+  letter-spacing: 4px;
+  /* visibility: hidden; */
+  /* opacity: 0; */
+}
+.w-60 {
+  width: 65%;
+  margin: 0px auto;
+}
+.info-name {
+  font-size: 1.5rem;
+  color: #c6a46d;
+  font-weight: 400;
+  letter-spacing: 3px;
+  /* margin-bottom: 20px; */
+  font-family: "Merriweather", serif;
+}
+.line-space {
+  letter-spacing: 10px;
+}
+.small-info {
+  font-size: 12px;
+  color: #c6a46d;
+  font-weight: 400;
+  letter-spacing: 3px;
+  /* margin-bottom: 20px; */
+  font-family: "Merriweather", serif;
+}
+.info-price {
+  display: flex;
+  align-items: center;
+  color: #c6a46d;
+  font-weight: 400;
+  letter-spacing: 3px;
+  font-family: "Merriweather", serif;
+  justify-content: space-evenly;
+  font-size: 1rem;
+}
+.info-price span {
+  width: 60px;
+  height: 2px;
+  background-color: #c6a46d;
+}
+.info-line {
+  width: 100%;
+  height: 2px;
+  margin: 30px 0;
+  background-color: #c6a46d;
+}
+.btm-span {
+  /* font-family: "Pinyon Script", cursive; */
+  font-style: normal;
+}
+.cards:hover {
+  transition: 3s;
+  /* background-image: url(/assets/images/pexels-shiny-diamond-3373716.jpg); */
+  cursor: pointer;
+}
+.one:hover {
+  background-image: url(/assets/images/transition1.1.JPG);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.two:hover {
+  background-image: url(/assets/images/transition2.1.JPG);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.three:hover {
+  background-image: url(/assets/images/transition3.1.JPG);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.cards:hover > .info {
+  cursor: pointer;
+  transition: 2s;
+  opacity: 1;
+}
+.gallery {
+  margin: 0px auto;
+  text-align: center;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 30px 0px;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.gallery div {
+  margin: 20px 0px;
+}
+/* color: #BC8330; */
+
+.gallery-h1 {
+  font-family: "Merriweather", serif;
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 1.5;
+  text-transform: uppercase;
+  color: #000;
+  font-size: 2rem;
+}
+.gallery-p {
+  width: 80%;
+  margin: 10px auto;
+  font-family: "Merriweather", serif;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5;
+  text-transform: uppercase;
+  color: #000;
+}
+
+.cheeks {
+  width: 300.667px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  margin: 0px auto;
+  height: 490px;
+  border-radius: 20px;
+}
+.treatment-title h1 {
+  font-family: "Merriweather", serif;
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 1.5;
+  text-transform: uppercase;
+  color: #c6a46d;
+  font-size: 2rem;
+}
+.treatment-title .line {
+  height: 2px;
+  margin: 30px 0;
+  background-color: #c6a46d;
+}
+.item img {
+  width: 490px;
+  height: 550px;
+}
+.about-box {
+  background-color: #fff;
+  width: 100%;
+  /* height: 100%; */
+  padding: 20px;
+  box-shadow: 0px 10px 25px rgba(188, 152, 74, 0.25);
+}
+.about-h1 {
+  width: 80%;
+  margin: 30px auto;
+  text-align: center;
+}
+.about-h1 h1,
+.about-info h1 {
+  font-family: "Merriweather", serif;
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 1.5;
+  text-transform: uppercase;
+  color: #000;
+  font-size: 2rem;
+}
+.about-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 90%;
+  margin: 20px auto;
+  margin-top: 40px;
+}
+.about-info img {
+  width: 25%;
+  height: 100%;
+}
+.about-text {
+  width: 50%;
+  margin-top: 70px;
+  text-align: left;
+}
+.enquiry-text {
+  width: 50%;
+  margin-top: 0px;
+  text-align: left;
+}
+.about-text p {
+  font-family: "Merriweather", serif;
+  line-height: 1.5;
+  font-size: 14px;
+  margin-bottom: 10px;
+  color: #212529;
+}
+.about-text .line {
+  width: 200px;
+  height: 2px;
+  margin: 30px 0;
+  background-color: #000;
+}
+.about-text .line2 {
+  width: 100px;
+  height: 2px;
+  margin: 30px 0;
+  background-color: #000;
+}
+.enquiry {
+  /* color: #BC8330; */
+  background-color: #fff;
+}
+.enquiry-info {
+  display: flex;
+  align-items: center;
+}
+.input {
+  width: 100%;
+  padding: 10px;
+  height: auto;
+  font-size: 13px;
+  color: #afafaf;
+  margin-bottom: 10px;
+  border: 1px solid #c6a46d;
+  background-color: rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 10px 25px rgba(188, 152, 74, 0.25);
+}
+.input::placeholder {
+  color: #000;
+}
+footer {
+  padding: 20px 0px;
+  background: #fff;
+}
+
+footer ul {
+  width: 30%;
+  margin: 0px auto;
+  display: flex;
+  list-style: none;
+  text-align: center;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+/* Mobile screen and smaller devices  */
+@media only screen and (max-width: 900px) {
+.nav-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  padding: 10px 20px;
+}
+ul {
+    display: none;
+    align-items: start;
+  }
+.mobile-logo {
+  width: 50px;
+}
+.mobile-logo-text {
+  width: 150px;
+}
+.navbar-nav .dropdown-menu {
+    position: static;
+    border: none;
+    background: inherit;
+}
+.cards {
+  height: 100vh;
+  width: 33%;
+  overflow: hidden;
+  box-shadow: 5px 8px 5px rgba(188, 152, 74, 0.35);
+}
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  width: 33%;
+  height: 100%;
+  color: #fff;
+  padding: 5px;
+  position: absolute;
+  background-color: rgba(27, 27, 27, 0.75);
+  overflow: hidden;
+  opacity: 0;
+}
+.info h1 {
+  font-size: 1rem;
+  letter-spacing: 2px;
+  margin-bottom: 0px;
+  font-family: "Merriweather", serif;
+  font-style: normal;
+  font-weight: 400;
+  color: #c6a46d;
+}
+.info-name {
+  font-size: 1rem;
+  color: #c6a46d;
+  font-weight: 400;
+  letter-spacing: 2px;
+  /* margin-bottom: 20px; */
+  font-family: "Merriweather", serif;
+}
+.info-price {
+  display: flex;
+  align-items: center;
+  color: #c6a46d;
+  font-weight: 400;
+  letter-spacing: 3px;
+  font-family: "Merriweather", serif;
+  justify-content: space-evenly;
+  font-size: 0.9rem;
+}
+}
+
+/* Mobile screen and smaller devices  */
+@media only screen and (max-width: 700px) {
+  ul {
+    display: none;
+    align-items: start;
+  }
+  .cards {
+    width: 100%;
+  }
+  .two {
+    display: none;
+  }
+  .three {
+    display: none;
+  }
+  .info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    padding: 5px;
+    position: absolute;
+    background-color: rgba(27, 27, 27, 0.75);
+    overflow: hidden;
+    opacity: 0;
+  }
+  .gallery {
+    text-align: center;
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .gallery-h1 {
+    font-family: "Merriweather", serif;
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 2rem;
+  }
+  .gallery-p {
+    width: 80%;
+    margin: 10px auto;
+    font-family: "Merriweather", serif;
+    font-weight: 400;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    text-transform: uppercase;
+    color: #fff;
+  }
+  .gallery-img img {
+    width: 100%;
+  }
+  .item img {
+    width: 490px;
+    height: 490px;
+  }
+  .about-h1 {
+    width: 95%;
+    margin: 30px auto;
+    text-align: center;
+  }
+  .about-info {
+    display: flex;
+    flex-direction: row;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 95%;
+    margin: 20px auto;
+    margin-top: 40px;
+  }
+  .about-info img {
+    width: 100%;
+    height: 100%;
+  }
+  .about-text {
+    width: 100%;
+    margin-top: 70px;
+    text-align: center;
+  }
+  .about-text .line {
+    width: 100%;
+    height: 2px;
+    margin: 30px 0;
+    background-color: #c6a46d;
+  }
+  .about-text .line2 {
+    width: 100%;
+    height: 2px;
+    margin: 30px 0;
+    background-color: #c6a46d;
+  }
+}

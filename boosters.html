@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,300;1,400&family=Pinyon+Script&family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/fontawesome.min.css"
+        integrity="sha512-SgaqKKxJDQ/tAUAAXzvxZz33rmn7leYDYfBP+YoMRSENhf3zJyx3SBASt/OfeQwBHA1nxMis7mM3EV/oYT6Fdw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/assets/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+</head>
+
+<body class="bg-dark">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary m-auto nav-box">
+        <a href="/">
+            <img class="mobile-logo" src="/assets/images/logo-_black-removebg-preview.png" width="70" alt="">
+            <img class="mobile-logo-text" src="/assets/images/logo1-_black-removebg-preview.png" width="200" alt="">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/gallery.html">Gallery</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/contacts">Contact</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Treatments
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="/body.html">Body</a></li>
+                        <li><a class="dropdown-item" href="/tratments.html">Facials</a></li>
+                        <li><a class="dropdown-item" href="/boosters.html">Boosters</a></li>
+                        <li><a class="dropdown-item" href="/injections.html">Injections</a></li>
+                        <li><a class="dropdown-item" href="/others">Others</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <style>
+        .font-3 {
+            font-family: 'Pinyon Script', cursive;
+            font-size: 4rem;
+            font-weight: bolder !important;
+            color: #c6a46d;
+        }
+
+        .font-3-info {
+            /* font-family: 'Pinyon Script', cursive; */
+            font-size: 4rem;
+            font-weight: bolder !important;
+            color: #c6a46d;
+        }
+
+        .text-gold {
+            color: #c6a46d;
+        }
+
+        .info-line {
+            width: 70%;
+            background: rgba(248, 242, 242, 0.418);
+        }
+
+        .long-line {
+            width: 70%;
+            height: 2px;
+            margin: 15px auto;
+            background: rgba(248, 242, 242, 0.418);
+        }
+
+        .w-80 {
+            width: 80%;
+        }
+
+        .w-30 {
+            width: 40%;
+        }
+
+        .negative-margin {
+            margin-top: -30px;
+        }
+
+        .width-sm {
+            width: 45%;
+            height: 600px;
+            margin: 10px auto;
+        }
+
+        .img-box {
+            width: 31%;
+            padding: 0;
+            position: relative;
+        }
+
+        .width-contain {
+            background: #000;
+            opacity: .7;
+            width: -webkit-fill-available;
+        }
+
+        .box-info {
+            position: absolute;
+            display: flex;
+            padding: 20px;
+            flex-direction: column;
+            height: 100%;
+            align-items: center;
+
+            justify-content: space-between;
+        }
+
+        .carbon-laser {
+            background-image: url(/assets/images/carbon-laser.JPG);
+            background-color: black;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .aqua-glow {
+            background-image: url(/assets/images/aquaGlow.JPG);
+            background-color: black;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .radio-frequency {
+            background-image: url(/assets/images/radioFrequency.JPG);
+            background-color: black;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .signature {
+            background-image: url(/assets/images/signature.JPG);
+            background-color: black;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .dermalux {
+            background-image: url(/assets/images/dermalux.JPG);
+            background-color: black;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .dermaplane {
+            background-image: url(/assets/images/dermaplane.JPG);
+            background-color: black;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .microneedling {
+            background-image: url(/assets/images/microneedling.JPG);
+            background-color: black;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .profhilo {
+            background-image: url(/assets/images/profhilo.JPG);
+            background-color: black;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .seventy-hyal {
+            background-image: url(/assets/images/seventyHyal.JPG);
+            background-color: black;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+
+        }
+
+        .lumi-eyes {
+            background-image: url(/assets/images/lumiEyes.JPG);
+            background-color: black;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .eye-treatment {
+            background-image: url(/assets/images/);
+            background-color: black;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .bg-trans {
+            /* background-color: #00000065; */
+            background-color: rgba(0, 0, 0, .2);
+            /* position: ab; */
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+        }
+
+        .modal-dialog {
+            /* display: none; */
+            max-width: 60%;
+            margin: 0px auto;
+        }
+
+        .spacing {
+            letter-spacing: 4px;
+        }
+
+        .list {
+            width: 80%;
+            display: block;
+            margin: 0px auto;
+            list-style: disc;
+        }
+
+        .fs-5 {
+            font-size: 1.25rem !important;
+            font-weight: 600;
+        }
+
+        @media only screen and (max-width:1000px) {
+            .font-3 {
+                font-family: 'Pinyon Script', cursive;
+                font-size: 4rem;
+            }
+
+            .font-3-info {
+                font-size: 2rem;
+                font-weight: bolder !important;
+                color: #c6a46d;
+            }
+
+            .fs-5 {
+                font-size: 1.2rem !important;
+            }
+
+            .spacing {
+                letter-spacing: 4px;
+            }
+
+            .modal-dialog {
+                /* display: none; */
+                max-width: 90%;
+                margin: 0px auto;
+            }
+
+            .w-75 {
+                width: 95% !important;
+            }
+
+            .width-sm {
+                width: 100%;
+                margin: 10px auto;
+            }
+
+            .img-box {
+                width: 100%;
+                padding: 0;
+                margin: 0px !important;
+                position: relative;
+            }
+
+            .width-contain {
+                background: #000;
+                opacity: .7;
+                width: -webkit-fill-available;
+            }
+
+            .box-info {
+                position: absolute;
+                display: flex;
+                padding: 20px;
+                flex-direction: column;
+                height: 100%;
+                align-items: center;
+
+                justify-content: space-between;
+            }
+
+        }
+    </style>
+    <main>
+        <!-- Skin boosters-->
+        <div class="px-3">
+            <div class="text-center py-5">
+                <p class="text-uppercase fs-5 fw-semibold mb-4 txt-color">
+                    Skin Booster
+                </p>
+                <h1 class="fs-4 fw-bold text-uppercase lh-base txt-color txt-family">Treatment by cortez</h1>
+                <p class="fs-5 lh-base text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam
+                    eum
+                    blanditiis
+                    et asperiores fugiat explicabo ipsa tenetur delectus exercitationem laborum.
+                </p>
+            </div>
+            <div class="d-flex flex-wrap">
+                <!-- Prohilo -->
+                <div class="profhilo width-sm" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+                    <div
+                        class="bg-trans py-4 d-flex align-items-center justify-content-between text-center flex-column text-white">
+                        <div>
+                            <h1 class="font-3">Profhilo</h1>
+                            <p class="fs-5 spacing">Skin booster</p>
+                        </div>
+                        <button class="btn font-3-info mt-5">
+                            More Info
+                            <div class="long-line w-100"></div>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="bg-dark">
+                                <button type="button" class="btn btn-secondary text-end mt-3 ms-3"
+                                    data-bs-dismiss="modal">X</button>
+                            </div>
+                            <div class="modal-body py-0 px-0">
+                                <div
+                                    class="bg-trans bg-dark py-4 d-flex align-items-center justify-content-around text-center flex-column text-white">
+                                    <div>
+                                        <h1 class="font-3">Profhilo</h1>
+                                        <p class="fs-5 spacing">Skin booster</p>
+                                    </div>
+                                    <div class="w-100">
+                                        <h1 class="font-3 spacing">1 Treatment</h1>
+                                        <div class="w-50 mx-auto d-flex align-items-center negative-margin">
+                                            <div class="info-line"></div>
+                                            <p class="w-100 mb-0 fs-5">&#163;200</p>
+                                            <div class="info-line"></div>
+                                        </div>
+                                    </div>
+                                    <div class="w-100">
+                                        <h1 class="font-3 spacing">2 Treatments</h1>
+                                        <div class="w-50 mx-auto d-flex align-items-center negative-margin">
+                                            <div class="info-line"></div>
+                                            <p class="w-100 mb-0 fs-5">&#163;350</p>
+                                            <div class="info-line"></div>
+                                        </div>
+                                    </div>
+                                    <div class="w-100">
+                                        <h1 class="font-3 spacing">3 Treatments</h1>
+                                        <div class="w-50 mx-auto d-flex align-items-center negative-margin">
+                                            <div class="info-line"></div>
+                                            <p class="w-100 mb-0 fs-5">&#163;500</p>
+                                            <div class="info-line"></div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <p class="fs-5 spacing w-75 mx-auto">The first of its kind, profhilo is a
+                                            revolutionary
+                                            'beneath
+                                            the skin' hyaluronic acid inhectable gel. which has a prolonged stimulating
+                                            activity
+                                            on the dermal cell. When injected into the skin, Profhilo stimulates th skin
+                                            cell
+                                            receptors to counteract skin laxity and improve and restore firmness of the
+                                            skin.
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <p class="fs-5 spacing w-75 mx-auto">Profhilo not only booosts and hydrates the
+                                            skin, but
+                                            also
+                                            remodels ageing and sagging tissue.</p>
+                                    </div>
+                                    <div>
+                                        <p class="spacing fs-4 text-gold fw-lighter">Timeless Treatment Room</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Seventy-hyal -->
+                <div class="seventy-hyal width-sm" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+                    <div
+                        class="bg-trans py-4 d-flex align-items-center justify-content-between text-center flex-column text-white">
+                        <div>
+                            <h1 class="font-3">Seventy Hyal</h1>
+                            <p class="fs-5 spacing">Skin Booster</p>
+                        </div>
+                        <button class="btn font-3-info mt-5">
+                            More Info
+                            <div class="long-line w-100"></div>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="bg-dark">
+                                <button type="button" class="btn btn-secondary text-end mt-3 ms-3"
+                                    data-bs-dismiss="modal">X</button>
+                            </div>
+                            <div class="modal-body py-0 px-0">
+                                <div
+                                    class="bg-trans bg-dark py-4 d-flex align-items-center justify-content-around text-center flex-column text-white">
+                                    <div>
+                                        <h1 class="font-3">Seventy Hyal</h1>
+                                        <p class="fs-5 spacing">Skin Booster</p>
+                                    </div>
+                                    <div class="w-100">
+                                        <h1 class="font-3 spacing">1 Treatment</h1>
+                                        <div class="w-50 mx-auto d-flex align-items-center negative-margin">
+                                            <div class="info-line"></div>
+                                            <p class="w-100 mb-0 fs-5">&#163;120</p>
+                                            <div class="info-line"></div>
+                                        </div>
+                                    </div>
+                                    <div class="w-100">
+                                        <h1 class="font-3 spacing">2 Treatments</h1>
+                                        <div class="w-50 mx-auto d-flex align-items-center negative-margin">
+                                            <div class="info-line"></div>
+                                            <p class="w-100 mb-0 fs-5">&#163;220</p>
+                                            <div class="info-line"></div>
+                                        </div>
+                                    </div>
+                                    <div class="w-100">
+                                        <h1 class="font-3 spacing">3 Treatments</h1>
+                                        <div class="w-50 mx-auto d-flex align-items-center negative-margin">
+                                            <div class="info-line"></div>
+                                            <p class="w-100 mb-0 fs-5">&#163;300</p>
+                                            <div class="info-line"></div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <p class="fs-5 spacing w-75 mx-auto">The newest skin booster Seventy Hyal 2000
+                                            is a
+                                            bio-stimulating inhectabke skin booster. intended to help treat the
+                                            depletion of
+                                            Hyakuronuc Acid eithin the skin. It delivers 30 mg of moisture-surging
+                                            hydration
+                                            whukst simultaneously stimulating the production of new collagen and
+                                            elastin.
+                                            Seventy Hyal l2000 makes firthe perfect skin rejuvenation treatment to
+                                            improve skin
+                                            texture and skin laxity whilst adding gentle volume. Aside from helping to
+                                            influence
+                                            the structural and functional lements of the skin. the main unique selling
+                                            points
+                                            are' to hydrate, contour and add glow.</p>
+                                    </div>
+                                    <div>
+                                        <p class="spacing fs-4 text-gold fw-lighter">Timeless Treatment Room</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Lumi-eyes -->
+                <div class="lumi-eyes width-sm" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal3">
+                    <div
+                        class="bg-trans py-4 d-flex align-items-center justify-content-between text-center flex-column text-white">
+                        <div>
+                            <h1 class="font-3">Lumi Eyes</h1>
+                            <p class="fs-5 spacing">Skin Booster</p>
+                        </div>
+                        <button class="btn font-3-info mt-5">
+                            More Info
+                            <div class="long-line w-100"></div>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="bg-dark">
+                                <button type="button" class="btn btn-secondary text-end mt-3 ms-3"
+                                    data-bs-dismiss="modal">X</button>
+                            </div>
+                            <div class="modal-body py-0 px-0">
+                                <div
+                                    class="bg-trans bg-dark py-4 d-flex align-items-center justify-content-around text-center flex-column text-white">
+                                    <div>
+                                        <h1 class="font-3">LumiEyes</h1>
+                                        <p class="fs-5 spacing">Skin Booster</p>
+                                    </div>
+                                    <div class="w-100">
+                                        <h1 class="font-3">1 Treatment</h1>
+                                        <div class="w-50 mx-auto d-flex align-items-center negative-margin">
+                                            <div class="info-line"></div>
+                                            <p class="w-100 mb-0 fs-5">&#163;100</p>
+                                            <div class="info-line"></div>
+                                        </div>
+                                    </div>
+                                    <div class="w-100">
+                                        <h1 class="font-3">2 Treatments</h1>
+                                        <div class="w-50 mx-auto d-flex align-items-center negative-margin">
+                                            <div class="info-line"></div>
+                                            <p class="w-100 mb-0 fs-5">&#163;250</p>
+                                            <div class="info-line"></div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <p class="fs-5 spacing w-75 mx-auto">LUMI EYES by Dermaren is a high quality
+                                            PDRN treatment
+                                            which offers deep hydration and rejuvenation to reducing signs of fatigue
+                                            such as
+                                            dark circles, restoring lost volume, and smoothing fine lines and wrinkles.
+                                            This
+                                            tear-trough treatment works to repair ad regenerate damaged tissue around th
+                                            delicate eye area, as well as stimulating the skin's own production of
+                                            collagen and
+                                            elastin. Following treatment, the eye area is firmer, sagging and wrinkles
+                                            are
+                                            improved, dark wrinklesare improved dark dhadows are reduced, and the eye
+                                            area is
+                                            lightened, brightened, hydrated, fresh, and revitalised.<br>
+                                            (3 Treatments required).</p>
+                                    </div>
+                                    <div>
+                                        <p class="spacing fs-4 text-gold fw-lighter">Timeless Treatment Room</p>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Eye Treatment -->
+                <div class="eye-treatment width-sm" type="button" data-bs-toggle="modal"
+                    data-bs-target="#exampleModal4">
+                    <div
+                        class="bg-trans bg-dark py-4 d-flex align-items-center justify-content-between text-center flex-column text-white">
+                        <div>
+                            <h1 class="font-3">Eye Treatment</h1>
+                            <p class="fs-5 spacing">Under eye bags & <br> dark circles</p>
+                        </div>
+                        <button class="btn font-3-info mt-5">
+                            More Info
+                            <div class="long-line w-100"></div>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="bg-dark">
+                                <button type="button" class="btn btn-secondary text-end mt-3 ms-3"
+                                    data-bs-dismiss="modal">X</button>
+                            </div>
+                            <div class="modal-body py-0 px-0">
+                                <div
+                                    class="bg-trans bg-dark py-4 d-flex align-items-center justify-content-around text-center flex-column text-white">
+                                    <div>
+                                        <h1 class="font-3">Eye Treatment</h1>
+                                        <p class="fs-5 spacing">Under eye bags & <br> dark circles</p>
+                                    </div>
+                                    <div class="w-100">
+                                        <h1 class="font-3 spacing">1 Treatment</h1>
+                                        <div class="w-50 mx-auto d-flex align-items-center negative-margin">
+                                            <div class="info-line"></div>
+                                            <p class="w-100 mb-0 fs-5">&#163;100</p>
+                                            <div class="info-line"></div>
+                                        </div>
+                                    </div>
+                                    <div class="w-100">
+                                        <h1 class="font-3 spacing">3 Treatments</h1>
+                                        <div class="w-50 mx-auto d-flex align-items-center negative-margin">
+                                            <div class="info-line"></div>
+                                            <p class="w-100 mb-0 fs-5">&#163;250</p>
+                                            <div class="info-line"></div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <p class="fs-5 spacing w-75 mx-auto">
+                                            LUMI EYES by Dermaren is a high quality PDRN treatment which offers deep
+                                            hydration
+                                            and rejuvenation to the eye area by effectively reducing signs of fatigue
+                                            such as
+                                            dark circles, restoring lost volume, and smoothing fine lines and wrinkles.
+                                            This
+                                            tear-trough rreatment works to repair and regenerate damaged tissue around
+                                            the
+                                            delicate eye area, as well as stimulating the skin's own producrion of
+                                            collagen and
+                                            elastin. Following treatment, the eye area is firmer, sagging and wrinkles
+                                            are
+                                            improved. dark shadows are reduced. and the eye area is lighened,
+                                            brightened,
+                                            hydrated, fresh, ans revitalised.<br> (3 Treatments required)
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <p class="spacing fs-4 text-gold fw-lighter">Timeless Treatment Room</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div id="contact" class="about-box enquiry">
+            <div class="about-h1">
+                <h1>Enquiry</h1>
+            </div>
+            <div class="about-info enquiry-info">
+                <div class="about-text enquiry-text">
+                    <form action="">
+                        <input class="input" name="fname" placeholder="First Name" type="text" required="required">
+                        <input class="input" name="lname" placeholder="Last Name" type="text">
+                        <input class="input" name="email" placeholder="Email" type="email" required="required">
+                        <textarea class="input" name="message" cols="30" rows="4" placeholder="Message"></textarea>
+                        <!-- <div class="center">
+                                    <input class="submit" value="Submit" type="submit">
+                                </div> -->
+                    </form>
+                </div>
+                <img src="/assets/images/Enquiry-img.JPG" alt="">
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div>
+            <ul>
+                <li><a href="">
+                        <i class="fa-brands fa-instagram fa-2x"></i>
+                    </a></li>
+                <li><a href="">
+                        <i class="fa-brands fa-twitter fa-2x"></i>
+                    </a></li>
+                <li><a href="">
+                        <i class="fa-regular fa-envelope fa-2x"></i>
+                    </a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"
+        integrity="sha512-fD9DI5bZwQxOi7MhYWnnNPlvXdp/2Pj3XSTRrFs5FQa4mizyGLnJcN6tuvUS6LbmgN1ut+XGSABKvjN0H6Aoow=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+        integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+
+</html>

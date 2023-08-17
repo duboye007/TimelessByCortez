@@ -1,0 +1,377 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,300;1,400&family=Pinyon+Script&family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/fontawesome.min.css"
+        integrity="sha512-SgaqKKxJDQ/tAUAAXzvxZz33rmn7leYDYfBP+YoMRSENhf3zJyx3SBASt/OfeQwBHA1nxMis7mM3EV/oYT6Fdw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/assets/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Gallery</title>
+    <style>
+        .width-sm {
+            width: 35%;
+            margin: 10px auto;
+        }
+
+        .img-box {
+            width: 31%;
+            padding: 0;
+            position: relative;
+        }
+
+        .width-contain {
+            background: #000;
+            opacity: .7;
+            width: -webkit-fill-available;
+        }
+
+        .box-info {
+            position: absolute;
+            display: flex;
+            padding: 20px;
+            flex-direction: column;
+            height: 100%;
+            align-items: center;
+
+            justify-content: space-between;
+        }
+
+        @media only screen and (max-width:800px) {
+            .width-sm {
+                width: 100%;
+                margin: 10px auto;
+            }
+
+            .img-box {
+                width: 100%;
+                padding: 0;
+                position: relative;
+            }
+
+            .width-contain {
+                background: #000;
+                opacity: .7;
+                width: -webkit-fill-available;
+            }
+
+            .box-info {
+                position: absolute;
+                display: flex;
+                padding: 20px;
+                flex-direction: column;
+                height: 100%;
+                align-items: center;
+
+                justify-content: space-between;
+            }
+
+        }
+    </style>
+</head>
+
+<body class="bg-dark">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary m-auto nav-box">
+        <a href="/">
+            <img class="mobile-logo" src="/assets/images/logo-_black-removebg-preview.png" width="70" alt="">
+            <img class="mobile-logo-text" src="/assets/images/logo1-_black-removebg-preview.png" width="200" alt="">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/gallery.html">Gallery</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/contacts">Contact</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Treatments
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="/body.html">Body</a></li>
+                        <li><a class="dropdown-item" href="/tratments.html">Facials</a></li>
+                        <li><a class="dropdown-item" href="/boosters.html">Boosters</a></li>
+                        <li><a class="dropdown-item" href="/injections.html">Injections</a></li>
+                        <li><a class="dropdown-item" href="/others">Others</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <main>
+        <div class="px-3">
+            <div class="width-sm text-center py-5">
+                <h1 class="fs-4 fw-bold text-uppercase lh-base txt-color txt-family">Treatment by cortez Gallery</h1>
+                <p class="fs-5 lh-base text-white">Have a closer look at our best works and clients reviews. Lorem ipsum
+                    dolor sit, amet consectetur adipisicing elit. Placeat, incidunt!</p>
+            </div>
+        </div>
+        <div>
+
+            <div class="owl-carousel owl-theme">
+                <div class="my-2 item">
+                    <img class="" src="/assets/images/image_6487327 (12).JPG" alt="">
+                    <div>
+                        <P class="txt-color">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium velit in aliquid pariatur eos rem animi omnis nam, facilis modi?</P>
+                    </div>
+                </div>
+                <div class="item my-2">
+                    <img class="" src="/assets/images/image_6487327 (13).JPG" alt="">
+                    <div>
+                        <P class="txt-color">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium velit in aliquid pariatur eos rem animi omnis nam, facilis modi?</P>
+                    </div>
+                </div>
+                <div class="item my-2">
+                    <img class="" src="/assets/images/image_6487327 (27).JPG" alt="">
+                    <div>
+                        <P class="txt-color">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium velit in aliquid pariatur eos rem animi omnis nam, facilis modi?</P>
+                    </div>
+                </div>
+                <div class="item my-2">
+                    <img class="" src="/assets/images/image_6487327 (28).JPG" alt="">
+                    <div>
+                        <P class="txt-color">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium velit in aliquid pariatur eos rem animi omnis nam, facilis modi?</P>
+                    </div>
+                </div>
+                <!-- <div class="item my-2">
+                    <img class="" src="/assets/images/lip-before.JPG" alt="">
+                    <div>
+                        <P class="txt-color">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium velit in aliquid pariatur eos rem animi omnis nam, facilis modi?</P>
+                    </div>
+                </div>
+                <div class="item my-2">
+                    <img class="" src="/assets/images/lip-after.JPG" alt="">
+                    <div>
+                        <P class="txt-color">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium velit in aliquid pariatur eos rem animi omnis nam, facilis modi?</P>
+                    </div>
+                </div> -->
+
+            </div>
+            <div class="owl-carousel owl-theme">
+                <div class="my-2 item">
+                    <img class="" src="/assets/images/face-1.JPG" alt="">
+                    <div>
+                        <P class="txt-color">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium velit in aliquid pariatur eos rem animi omnis nam, facilis modi?</P>
+                    </div>
+                </div>
+                <div class="item my-2">
+                    <img class="" src="/assets/images/face-2.JPG" alt="">
+                    <div>
+                        <P class="txt-color">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium velit in aliquid pariatur eos rem animi omnis nam, facilis modi?</P>
+                    </div>
+                </div>
+                <div class="item my-2">
+                    <img class="" src="/assets/images/face-3.JPG" alt="">
+                    <div>
+                        <P class="txt-color">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium velit in aliquid pariatur eos rem animi omnis nam, facilis modi?</P>
+                    </div>
+                </div>
+                <div class="item my-2">
+                    <img class="" src="/assets/images/face-4.JPG" alt="">
+                    <div>
+                        <P class="txt-color">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium velit in aliquid pariatur eos rem animi omnis nam, facilis modi?</P>
+                    </div>
+                </div>
+                <div class="item my-2">
+                    <img class="" src="/assets/images/face-5.JPG" alt="">
+                    <div>
+                        <P class="txt-color">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium velit in aliquid pariatur eos rem animi omnis nam, facilis modi?</P>
+                    </div>
+                </div>
+                <div class="item my-2">
+                    <img class="" src="/assets/images/face-6.JPG" alt="">
+                    <div>
+                        <P class="txt-color">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium velit in aliquid pariatur eos rem animi omnis nam, facilis modi?</P>
+                    </div>
+                </div>
+
+            </div>
+            <div class="owl-carousel owl-theme">
+                <div class="my-2 item">
+                    <img class="" src="/assets/images/work1.JPG" alt="">
+                    <div>
+                        <P class="txt-color">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium velit in aliquid pariatur eos rem animi omnis nam, facilis modi?</P>
+                    </div>
+                </div>
+                <div class="item my-2">
+                    <img class="" src="/assets/images/work2.JPG" alt="">
+                    <div>
+                        <P class="txt-color">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium velit in aliquid pariatur eos rem animi omnis nam, facilis modi?</P>
+                    </div>
+                </div>
+                <div class="item my-2">
+                    <img class="" src="/assets/images/work3.JPG" alt="">
+                    <div>
+                        <P class="txt-color">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium velit in aliquid pariatur eos rem animi omnis nam, facilis modi?</P>
+                    </div>
+                </div>
+                <div class="item my-2">
+                    <img class="" src="/assets/images/work4.JPG" alt="">
+                    <div>
+                        <P class="txt-color">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium velit in aliquid pariatur eos rem animi omnis nam, facilis modi?</P>
+                    </div>
+                </div>
+                <div class="item my-2">
+                    <img class="" src="/assets/images/work5.JPG" alt="">
+                    <div>
+                        <P class="txt-color">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium velit in aliquid pariatur eos rem animi omnis nam, facilis modi?</P>
+                    </div>
+                </div>
+                <div class="item my-2">
+                    <img class="" src="/assets/images/work6.JPG" alt="">
+                    <div>
+                        <P class="txt-color">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium velit in aliquid pariatur eos rem animi omnis nam, facilis modi?</P>
+                    </div>
+                </div>
+            </div>
+            <div class="owl-carousel owl-theme">
+                <div class="my-2 item">
+                    <img class="" src="/assets/images/cheeks1.JPG" alt="">
+                    <div>
+                        <P class="txt-color">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium velit in aliquid pariatur eos rem animi omnis nam, facilis modi?</P>
+                    </div>
+                </div>
+                <div class="item my-2">
+                    <img class="" src="/assets/images/cheeks2.JPG" alt="">
+                    <div>
+                        <P class="txt-color">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium velit in aliquid pariatur eos rem animi omnis nam, facilis modi?</P>
+                    </div>
+                </div>
+                <div class="item my-2">
+                    <img class="" src="/assets/images/cheeks3.JPG" alt="">
+                    <div>
+                        <P class="txt-color">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium velit in aliquid pariatur eos rem animi omnis nam, facilis modi?</P>
+                    </div>
+                </div>
+                <div class="item my-2">
+                    <img class="" src="/assets/images/cheeks4.JPG" alt="">
+                    <div>
+                        <P class="txt-color">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium velit in aliquid pariatur eos rem animi omnis nam, facilis modi?</P>
+                    </div>
+                </div>
+                <div class="item my-2">
+                    <img class="" src="/assets/images/cheeks5.JPG" alt="">
+                    <div>
+                        <P class="txt-color">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium velit in aliquid pariatur eos rem animi omnis nam, facilis modi?</P>
+                    </div>
+                </div>
+                <div class="item my-2">
+                    <img class="" src="/assets/images/cheeks6.JPG" alt="">
+                    <div>
+                        <P class="txt-color">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium velit in aliquid pariatur eos rem animi omnis nam, facilis modi?</P>
+                    </div>
+                </div>
+                <div class="item my-2">
+                    <img class="" src="/assets/images/cheeks7.JPG" alt="">
+                    <div>
+                        <P class="txt-color">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium velit in aliquid pariatur eos rem animi omnis nam, facilis modi?</P>
+                    </div>
+                </div>
+                <div class="item my-2">
+                    <img class="" src="/assets/images/cheeks8.JPG" alt="">
+                    <div>
+                        <P class="txt-color">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium velit in aliquid pariatur eos rem animi omnis nam, facilis modi?</P>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div id="contact" class="about-box enquiry">
+            <div class="about-h1">
+                <h1>Enquiry</h1>
+            </div>
+            <div class="about-info enquiry-info">
+                <div class="about-text enquiry-text">
+                    <form action="">
+                        <input class="input" name="fname" placeholder="First Name" type="text" required="required">
+                        <input class="input" name="lname" placeholder="Last Name" type="text">
+                        <input class="input" name="email" placeholder="Email" type="email" required="required">
+                        <textarea class="input" name="message" cols="30" rows="4" placeholder="Message"></textarea>
+                        <!-- <div class="center">
+                                            <input class="submit" value="Submit" type="submit">
+                                        </div> -->
+                    </form>
+                </div>
+                <img src="/assets/images/Enquiry-img.JPG" alt="">
+            </div>
+        </div>
+        <footer>
+            <div>
+                <ul>
+                    <li><a href="">
+                            <i class="fa-brands fa-instagram fa-2x"></i>
+                        </a></li>
+                    <li><a href="">
+                            <i class="fa-brands fa-twitter fa-2x"></i>
+                        </a></li>
+                    <li><a href="">
+                            <i class="fa-regular fa-envelope fa-2x"></i>
+                        </a></li>
+                </ul>
+            </div>
+        </footer>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"
+        integrity="sha512-fD9DI5bZwQxOi7MhYWnnNPlvXdp/2Pj3XSTRrFs5FQa4mizyGLnJcN6tuvUS6LbmgN1ut+XGSABKvjN0H6Aoow=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+        integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script>
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            margin: 10,
+            nav: false,
+            dots: true,
+            autoplay: true,
+            autoplayTimeout: 1000,
+            autoplayHoverPause: true,
+
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 3
+                },
+                1000: {
+                    items: 3
+                }
+            }
+        })
+    </script>
+</body>
+
+</html>
