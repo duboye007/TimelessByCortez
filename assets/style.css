@@ -57,6 +57,7 @@ ul {
 }
 .dropdown-menu {
   align-items: start;
+  min-width: 15rem;
 }
 a {
   display: flex;
