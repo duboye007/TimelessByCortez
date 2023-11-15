@@ -23,10 +23,184 @@
         href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
         integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Document</title>
+    <title>PRP</title>
     <style>
+        .font-3 {
+            font-family: 'Pinyon Script', cursive;
+            font-size: 4rem;
+            font-weight: bolder !important;
+            color: #c6a46d;
+        }
+
+        .font-3-info {
+            /* font-family: 'Pinyon Script', cursive; */
+            font-size: 4rem;
+            font-weight: bolder !important;
+            color: #c6a46d;
+        }
+
         .text-gold {
-            color: #c6a46d !important;
+            color: #c6a46d;
+        }
+
+        .info-line {
+            width: 70%;
+            background: rgba(248, 242, 242, 0.418);
+        }
+
+        .long-line {
+            width: 70%;
+            height: 2px;
+            margin: 15px auto;
+            background: #c6a46d;
+            /* background: rgba(248, 242, 242, 0.418); */
+        }
+
+        .w-80 {
+            width: 80%;
+        }
+
+        .w-30 {
+            width: 40%;
+        }
+
+        .negative-margin {
+            margin-top: -30px;
+        }
+
+        .width-sm {
+            width: 45%;
+            height: 600px;
+            margin: 10px auto;
+        }
+
+        .img-box {
+            width: 31%;
+            padding: 0;
+            position: relative;
+        }
+
+        .width-contain {
+            background: #000;
+            opacity: .7;
+            width: -webkit-fill-available;
+        }
+
+        .box-info {
+            position: absolute;
+            display: flex;
+            padding: 20px;
+            flex-direction: column;
+            height: 100%;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .prp {
+            background-image: url(/assets/images/prp.JPG);
+            background-color: black;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .vampire {
+            background-image: url(/assets/images/vampire.JPG);
+            background-color: black;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .bg-trans {
+            background-color: rgba(0, 0, 0, .2);
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+        }
+
+        .modal-dialog {
+            /* display: none; */
+            max-width: 60%;
+            margin: 0px auto;
+        }
+
+        .spacing {
+            letter-spacing: 4px;
+        }
+
+        .list {
+            width: 80%;
+            display: block;
+            margin: 0px auto;
+            list-style: disc;
+        }
+
+        .fs-5 {
+            font-size: 1.25rem !important;
+            font-weight: 600;
+        }
+
+        @media only screen and (max-width:1000px) {
+            .font-3 {
+                font-family: 'Pinyon Script', cursive;
+                font-size: 4rem;
+            }
+
+            .font-3-info {
+                font-size: 2rem;
+                font-weight: bolder !important;
+                color: #c6a46d;
+            }
+
+            .fs-5 {
+                font-size: 1.2rem !important;
+            }
+
+            .spacing {
+                letter-spacing: 4px;
+            }
+
+            .modal-dialog {
+                /* display: none; */
+                max-width: 90%;
+                margin: 0px auto;
+            }
+
+            .w-75 {
+                width: 95% !important;
+            }
+
+            .width-sm {
+                width: 100%;
+                margin: 10px auto;
+            }
+
+            .img-box {
+                width: 100%;
+                padding: 0;
+                margin: 0px !important;
+                position: relative;
+            }
+
+            .width-contain {
+                background: #000;
+                opacity: .7;
+                width: -webkit-fill-available;
+            }
+
+            .box-info {
+                position: absolute;
+                display: flex;
+                padding: 20px;
+                flex-direction: column;
+                height: 100%;
+                align-items: center;
+
+                justify-content: space-between;
+            }
+
         }
     </style>
 </head>
@@ -34,7 +208,7 @@
 <body class="bg-dark">
     <nav class="navbar navbar-expand-lg bg-body-tertiary m-auto nav-box">
         <a href="/">
-            <img class="mobile-logo" src="/assets/images/logo-_black-removebg-preview.png" width="70" alt="">
+            <img class="mobile-logo" src="/assets/images/logo-bg.JPG" width="100" alt="">
             <img class="mobile-logo-text" src="/assets/images/logo1-_black-removebg-preview.png" width="200" alt="">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
@@ -60,7 +234,7 @@
                         <li><a class="dropdown-item" href="/eyeboosters.html">Eye Boosters</a></li>
                         <li><a class="dropdown-item" href="/threads.html">Threads</a></li>
                         <li><a class="dropdown-item" href="/prp.html">PRP</a></li>
-                        <li><a class="dropdown-item" href="/body.html">Body Treatment</a></li>
+                        <li><a class="dropdown-item" href="/body.html">Body Treatments</a></li>
                         <li><a class="dropdown-item" href="/fat.html">Fat Dissolving</a></li>
                         <li><a class="dropdown-item" href="/vitamin.html">Vitamin Injections</a></li>
                     </ul>
@@ -69,260 +243,203 @@
                     <a class="nav-link" href="/gallery.html">Gallery</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/contacts">Contact</a>
+                    <a class="nav-link" href="/contact.html">Contact</a>
                 </li>
             </ul>
         </div>
     </nav>
+
     <main>
-        <!-- Treatment Gallery -->
-        <div id="service" class="gallery">
-            <div class="gallery-h1 mb-0">
-                <h5>WELCOME</h5>
+        <!-- Injections -->
+        <div>
+            <div class="text-center py-5">
+                <p class="text-uppercase fs-5 fw-semibold mb-4 txt-color">
+                    PRP
+                </p>
+                <h1 class="fs-4 fw-bold text-uppercase lh-base txt-color txt-family">Timeless by cortez</h1>
+                <p class="fs-5 lh-base text-white">Platelet Rich Plasma is liquid gold for your skin and hair.
+                    Skin rejuvenating and highly powerful, nourishing ingredients, that are taken from your blood and
+                    put back into your
+                    skin or hair follicle, using microneedling or Meso therapy. This treatment can be used anywhere on
+                    the body in need of
+                    these special healing powers.
+                </p>
             </div>
-            <div class="gallery-h1">
-                <h1>timeless treatment room</h1>
-            </div>
-            <div class="gallery-p text-white">
-                <p>We specialise in Non-Surgical Cosmetic Treatments for the face & body.</p>
-                <p>We have a wide variety of machines for Lifting, Tightening, Sculpting & Freezing.</p>
-                <p>We pride ourselves on honesty & listening to the goals that you, our clients, want to achieve.</p>
-                <p>We also offer Advanced Aesthetic Injectable Treatments to enhance features, as well as, to keep you
-                    looking fresh &
-                    glowing all year round.</p>
-                <p>There’s so much more than just a facial to keep you looking your best, Facial Treatments including
-                    LED, Peels, Laser,
-                    PRP & Microneedling are also available to treat your skin concerns.</p>
-                <p class="fs-5">“I WANT YOU TO FEEL THE BEST VERSION OF YOU!”</p>
-            </div>
-            <div class="gallery-img">
-                <img src="/assets/images/who-we-are-logo-removebg-preview.png" width="500" alt="">
-            </div>
-        </div>
+            <div class="d-flex flex-wrap">
+                <!-- Platelet Rich Plasma -->
+                <div class="prp width-sm" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+                    <div
+                        class="bg-trans py-4 d-flex align-items-center justify-content-between text-center flex-column text-white">
+                        <div>
+                            <h1 class="font-3 text-white">Platelet Rich Plasma</h1>
+                            <div class="long-line"></div>
+                            <p class="fs-5 spacing">Hair Restoration</p>
+                        </div>
+                        <button class="btn font-3-info mt-5 text-white">
+                            More Info
+                            <div class="long-line w-100"></div>
+                        </button>
+                    </div>
+                </div>
 
-        <div class="img-box">
-            <div class="cards one">
-                <!-- <img src="" alt=""> -->
-                <div class="info">
-                    <div class="info-title">
-                        <h1>Facial</h1>
-                        <h6>Price List</h6>
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="bg-dark">
+                                <button type="button" class="btn btn-secondary text-end mt-3 ms-3"
+                                    data-bs-dismiss="modal">X</button>
+                            </div>
+                            <div class="modal-body py-0 px-0">
+                                <div
+                                    class="bg-trans bg-dark py-4 d-flex align-items-center justify-content-around text-center flex-column text-white">
+                                    <div>
+                                        <h1 class="font-3">Platelet Rich Plasma</h1>
+                                        <p class="fs-5 spacing">PRP Hair Restoration</p>
+                                    </div>
+                                    <div class="w-100">
+                                        <h1 class="font-3 spacing">1 Treatment</h1>
+                                        <div class="w-50 mx-auto d-flex align-items-center negative-margin">
+                                            <div class="info-line"></div>
+                                            <p class="w-100 mb-0 fs-5">&#163;200</p>
+                                            <div class="info-line"></div>
+                                        </div>
+                                    </div>
+                                    <div class="w-100">
+                                        <h1 class="font-3 spacing">2 Treatments</h1>
+                                        <div class="w-50 mx-auto d-flex align-items-center negative-margin">
+                                            <div class="info-line"></div>
+                                            <p class="w-100 mb-0 fs-5">&#163;350</p>
+                                            <div class="info-line"></div>
+                                        </div>
+                                    </div>
+                                    <div class="w-100">
+                                        <h1 class="font-3 spacing">3 Treatments</h1>
+                                        <div class="w-50 mx-auto d-flex align-items-center negative-margin">
+                                            <div class="info-line"></div>
+                                            <p class="w-100 mb-0 fs-5">&#163;450</p>
+                                            <div class="info-line"></div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <p class="fs-5 spacing w-75 mx-auto">
+                                            During a PRP session blood is drawn from a patient's arm. The blood is then
+                                            spun
+                                            to extract the plasma. Plasma is a substance found in the blood that
+                                            contains platelets.
+                                            This is then injected into areas on the scalp affected by hair loss.
+                                            PRP has been shown to help both men and women, mainly those with
+                                            androgenetic
+                                            alopecia, which is known among men as male-pattern baldness and among women
+                                            for leading to thin hair all over the head. PRP after having a hair
+                                            transplant will improve follicle viability, enhancing post-transplant tissue
+                                            healing and promotes hair growth in transplanted hair.
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <p class="fs-5 spacing w-75 mx-auto">
+                                            1 Treatment is recommended every month, for 3 months. Followed by an
+                                            appointment 4-6 months later.
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <p class="spacing fs-4 text-gold fw-lighter">Timeless Treatment Room</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="w-60">
-                        <p class="info-name">
-                            Aqua Glow
-                        </p>
-                        <p class="info-price">
-                            <!-- <span></span> -->
-                            &#163;100 - 90mins
-                            <!-- <span></span> -->
-                        </p>
-                        <div class="info-line"></div>
+                </div>
+
+                <!-- PRP Vampire Facial -->
+                <div class="vampire width-sm" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal4">
+                    <div
+                        class="bg-trans py-4 d-flex align-items-center justify-content-between text-center flex-column text-white">
+                        <div>
+                            <h1 class="font-3 text-white">PRP Vampire Facial</h1>
+                            <div class="long-line text-gold"></div>
+                            <p class="fs-5 spacing">Facial</p>
+                        </div>
+                        <button class="btn font-3-info mt-5 text-white">
+                            More Info
+                            <div class="long-line w-100"></div>
+                        </button>
                     </div>
-                    <div class="w-60">
-                        <p class="info-name">
-                            Radio Frequency
-                        </p>
-                        <p class="info-price">
-                            <!-- <span></span> -->
-                            &#163;85 - 75mins
-                            <!-- <span></span> -->
-                        </p>
-                        <div class="info-line"></div>
-                    </div>
-                    <div class="w-60">
-                        <p class="info-name">
-                            Signature
-                        </p>
-                        <p class="info-price">
-                            <!-- <span></span> -->
-                            &#163;75 - 60mins
-                            <!-- <span></span> -->
-                        </p>
-                        <div class="info-line"></div>
-                    </div>
-                    <div class="w-60">
-                        <p class="info-name">
-                            Dermalux LED
-                        </p>
-                        <p class="info-price">
-                            <!-- <span></span> -->
-                            &#163;50 - 40mins
-                            <!-- <span></span> -->
-                        </p>
-                        <div class="info-line"></div>
+                </div>
+
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="bg-dark">
+                                <button type="button" class="btn btn-secondary text-end mt-3 ms-3"
+                                    data-bs-dismiss="modal">X</button>
+                            </div>
+                            <div class="modal-body py-0 px-0">
+                                <div
+                                    class="bg-trans bg-dark py-4 d-flex align-items-center justify-content-around text-center flex-column text-white">
+                                    <div>
+                                        <h1 class="font-3">PRP Vampire Facial</h1>
+                                        <p class="fs-5 spacing">Collagen Therapy</p>
+                                    </div>
+                                    <div class="w-100">
+                                        <h1 class="font-3 spacing">1 Treatment</h1>
+                                        <div class="w-50 mx-auto d-flex align-items-center negative-margin">
+                                            <div class="info-line"></div>
+                                            <p class="w-100 mb-0 fs-5">&#163;200</p>
+                                            <div class="info-line"></div>
+                                        </div>
+                                    </div>
+                                    <div class="w-100">
+                                        <h1 class="font-3 spacing">2 Treatments</h1>
+                                        <div class="w-50 mx-auto d-flex align-items-center negative-margin">
+                                            <div class="info-line"></div>
+                                            <p class="w-100 mb-0 fs-5">&#163;350</p>
+                                            <div class="info-line"></div>
+                                        </div>
+                                    </div>
+                                    <div class="w-100">
+                                        <h1 class="font-3 spacing">3 Treatments</h1>
+                                        <div class="w-50 mx-auto d-flex align-items-center negative-margin">
+                                            <div class="info-line"></div>
+                                            <p class="w-100 mb-0 fs-5">&#163;450</p>
+                                            <div class="info-line"></div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <p class="fs-5 spacing w-75 mx-auto">
+                                            Platelet-rich plasma (PRP) therapy uses injections,
+                                            of a patient's own platelets to accelerate and heal the skin, boost
+                                            collagen, improve skin firmness, strengthen, repair and rejuvenate.
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <p class="fs-5 spacing w-75 mx-auto">
+                                            PRP injections uses each individual patient's own healing system, which
+                                            is prepared by taking your own blood and running it through a centrifuge
+                                            to concentrate the platelets. These activated platelets are then
+                                            injected directly into your face and neck which is known as "The Vampire
+                                            Facial." This releases growth factors that stimulate and increase the
+                                            number of reparative cells your body produces.
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <p class="fs-5 spacing w-100 mx-auto">
+                                            INCLUDING DERMALUX LED
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <p class="spacing fs-4 text-gold fw-lighter">Timeless Treatment Room</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="cards two">
-                <!-- <img src="" alt=""> -->
-                <div class="info">
-                    <div class="info-title">
-                        <h1>Anti-Wrinkle</h1>
-                        <h6>Price List</h6>
-                    </div>
-                    <div class="w-60">
-                        <p class="info-price">
-                            1 area - &#163;160
-                        </p>
-                        <p class="info-price">
-                            2 areas - &#163;190
-                        </p>
-                        <p class="info-price">
-                            3 areas - &#163;220
-                        </p>
-                        <div class="info-line"></div>
-                    </div>
-                    <div class="w-60">
-                        <p class="info-name line-space">
-                            Advanced Anti-Wrinkle
-                        </p>
-                        <p class="info-price">
-                            Masseter(facial slimming) - &#163;200
-                        </p>
-                        <p class="info-price">
-                            Hyperhidrosis(underarm sweating) -&#163;250
-                        </p>
-                        <p class="info-price">
-                            Neck Bands(neck lift) - &#163;300
-                        </p>
-                        <div class="info-line"></div>
-                    </div>
-                </div>
-            </div>
-            <div class="cards three">
-                <!-- <img src="" alt=""> -->
-                <div class="info">
-                    <div class="info-title">
-                        <h1>Dermal Fillers</h1>
-                        <h6>Price List</h6>
-                    </div>
-                    <div class="w-60">
-                        <p class="info-name">
-                            Lips
-                        </p>
-                        <p class="info-price">
-                            0.5 ml - &#163;100
-                        </p>
-                        <p class="info-price">
-                            1 ml - &#163;150
-                        </p>
-                        <div class="info-line"></div>
-                    </div>
-                    <div class="w-60">
-                        <p class="info-name">
-                            Cheeks. Chin. Nasal folds. Marionette lines. Jawline
-                        </p>
-                        <p class="info-price">
-                            1 ml - &#163;150
-                        </p>
-                        <p class="info-price">
-                            2 ml - &#163;300
-                        </p>
-                        <p class="info-price">
-                            3 ml - &#163;400
-                        </p>
-                        <p class="info-price">
-                            4 ml - &#163;500
-                        </p>
-                        <p class="info-price">
-                            5 ml - &#163;600
-                        </p>
-                        <div class="info-line"></div>
-                    </div>
-                    <div class="w-60">
-                        <p class="info-name">
-                            Liquid Rhinoplasty
-                        </p>
-                        <p class="info-price">
-                            &#163;250
-                        </p>
-                        <!-- <div class="info-line"></div> -->
-                    </div>
-                </div>
-            </div>
         </div>
-
-        <div id="about" class="about-box">
-            <div class="about-h1">
-                <h1>timeless treatment room</h1>
-                <!-- <div class="line"></div> -->
-                <h1>About us</h1>
-                <div class="line text-gold"></div>
-            </div>
-            <div class="about-info d-flex align-items-center">
-                <img src="/assets/images/contact-us.JPG" alt="CEO of timeless treatment">
-                <div class="about-text">
-
-                    <p>I personalise each treatment around what you want to achieve & put reality into what I do. Some
-                        treatments you will see
-                        results straight away, others you need a course of treatments to get the best results, it’s not
-                        a one size fits all, so
-                        listening & understanding is key in this industry.</p>
-                    <p>I am fully qualified & insured with all my treatments ranging from Skin Treatments, Body
-                        Sculpting & Fat Reduction, to
-                        Advanced Dermal Fillers & Anti-Wrinkle.</p>
-                    <p>Looking after my skin has been a priority for me since a young age, having had many treatments on
-                        myself through the
-                        years, I bring to you my passion of using products that I believe in.</p>
-                    <p class="fs-6">“I CARE ABOUT WHAT I DO & ALWAYS WANT TO GET THE BEST VERSION OF YOU!”</p>
-                    <div class="line"></div>
-                    <p class="fs-5 text-gold">CEO - Tony Cortez</p>
-
-                </div>
-            </div>
-        </div>
-
-        <!-- Gallery Section -->
-        <div class="owl-carousel owl-theme" style="padding: 20px 5px; background: #000;">
-            <div class="item">
-                <img src="/assets/images/gallery-6.JPG" alt="">
-                <!-- <img src="/assets/images/leg-1.JPG" alt="">
-                <img src="/assets/images/gallery-1.JPG" alt=""> -->
-            </div>
-            <div class="item">
-                <!-- <img src="/assets/images/gallery-2.JPG" alt=""> -->
-                <img src="/assets/images/gallery-7.JPG" alt="">
-                <!-- <img src="/assets/images/leg-2.JPG" alt=""> -->
-            </div>
-            <div class="item">
-                <!-- <img src="/assets/images/leg-3.JPG" alt=""> -->
-                <img src="/assets/images/gallery-8.JPG" alt="">
-                <!-- <img src="/assets/images/gallery-3.JPG" alt=""> -->
-            </div>
-            <div class="item">
-                <!-- <img src="/assets/images/gallery-4.JPG" alt=""> -->
-                <!-- <img src="/assets/images/leg-4.JPG" alt=""> -->
-                <img src="/assets/images/gallery-9.JPG" alt="">
-            </div>
-            <div class="item">
-                <img src="/assets/images/gallery-10.JPG" alt="">
-                <!-- <img src="/assets/images/gallery-5.JPG" alt=""> -->
-                <!-- <img src="/assets/images/leg-5.JPG" alt=""> -->
-            </div>
-            <div class="item">
-                <!-- <img src="/assets/images/leg-6.JPG" alt=""> -->
-                <img src="/assets/images/gallery-12.JPG" alt="">
-                <!-- <img src="/assets/images/random.JPG" alt=""> -->
-            </div>
-            <div class="item">
-                <img src="/assets/images/gallery-13.JPG" alt="">
-                <!-- <img src="/assets/images/leg-7 (1).JPG" alt=""> -->
-                <!-- <img src="/assets/images/gallery-1.JPG" alt=""> -->
-            </div>
-            <div class="item">
-                <!-- <img src="/assets/images/gallery-1.JPG" alt=""> -->
-                <img src="/assets/images/gallery-14.JPG" alt="">
-                <!-- <img src="/assets/images/leg-8.JPG" alt=""> -->
-            </div>
-            <div class="item">
-                <!-- <img src="/assets/images/leg-9.JPG" alt=""> -->
-                <img src="/assets/images/gallery-15.JPG" alt="">
-                <!-- <img src="/assets/images/gallery-1.JPG" alt=""> -->
-            </div>
-        </div>
-
-
 
         <div id="contact" class="about-box enquiry">
             <div class="about-h1">
@@ -334,11 +451,10 @@
                     <form action="">
                         <input class="input" name="fname" placeholder="First Name" type="text" required="required">
                         <input class="input" name="lname" placeholder="Last Name" type="text">
+                        <input class="input" name="mobile" placeholder="Mobile Number" type="number">
                         <input class="input" name="email" placeholder="Email" type="email" required="required">
                         <textarea class="input" name="message" cols="30" rows="4" placeholder="Message"></textarea>
-                        <!-- <div class="center">
-                            <input class="submit" value="Submit" type="submit">
-                        </div> -->
+                        <button class="input">Submit</button>
                     </form>
                 </div>
                 <img src="/assets/images/Enquiry-img.JPG" alt="">
@@ -360,6 +476,7 @@
             </ul>
         </div>
     </footer>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
         crossorigin="anonymous"></script>
@@ -372,30 +489,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
         integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
-    <script>
-        $('.owl-carousel').owlCarousel({
-            loop: true,
-            margin: 10,
-            nav: false,
-            dots: false,
-            autoplay: true,
-            autoplayTimeout: 1000,
-            autoplayHoverPause: true,
-
-            responsive: {
-                0: {
-                    items: 1
-                },
-                600: {
-                    items: 3
-                },
-                1000: {
-                    items: 3
-                }
-            }
-        })
-    </script>
 </body>
 
 </html>
